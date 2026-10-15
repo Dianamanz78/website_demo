@@ -60,14 +60,6 @@ body {
     text-align: center;
 }
 
-button {
-    background-color: blue;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -88,16 +80,18 @@ button {
 }
 
 /* Buttons */
-.nav-buttons button {
+.nav-buttons a {
     background-color:#E4D8BA; 
     color: #4A2545;
     border: none;
     padding: 10px 16px;
     border-radius: 6px;
     cursor: pointer;
+    text-decoration: none;   /* removes the underline */
+    display: inline-block; 
 }
 
-.nav-buttons button:hover {
+.nav-buttons a:hover {
     background-color: #90AA86;
 }
 
