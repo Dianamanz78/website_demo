@@ -1,0 +1,146 @@
+/* Website name */
+.logo {
+    margin: 0;
+    font-size: 24px;
+    color: #4A2545; 
+    font-family: Arial, sans-serif;
+}
+
+left {
+    text-align: left
+}
+
+h1 {
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+h3 {
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15.4px;
+}
+
+p {
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+blockquote {
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+pre {
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 18.5714px;
+}
+
+body {
+    background-color: #DCCCA3;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E4D8BA;
+    color: white;
+    position: sticky;
+    padding: 15px 30px;
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+/* Button container */
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+/* Buttons */
+.nav-buttons a {
+    background-color:#E4D8BA; 
+    color: #4A2545;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;   /* removes the underline */
+    display: inline-block; 
+    font-size: 15px;
+}
+
+.nav-buttons a:hover {
+    background-color: #90AA86;
+    color: #fff;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.spacer {
+  height: 50px;
+}
+
+div.mycontainer {
+  display: flex;
+  align-items: center;
+}
+
+div.mycontainer > div {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
+
+.image-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; 
+  width: 60px; 
+  height: 60px;
+  padding: 0;
+  cursor: pointer;
+  background-color: grey;
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+
+.icon-linkedin { width: 20px; height: 20px; }
+.icon-github   { width: 40px; height: 40px; }
+.icon-email { width: 90px; height: 70px; }
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;   /* keeps both circles level */
+  gap: 12px;
+}
