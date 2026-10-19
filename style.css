@@ -1,4 +1,4 @@
-/* Website name */
+/* top of page */
 .logo {
     margin: 0;
     font-size: 24px;
@@ -6,6 +6,89 @@
     font-family: Arial, sans-serif;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DCCCA3;
+    color: white;
+    position: sticky;
+    padding: 15px 30px;
+    top: 0;
+    z-index: 1000;
+}
+
+/* buttons */
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+
+.nav-buttons a {
+    background-color:#DCCCA3; 
+    color: #4A2545;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;   /* removes the underline */
+    display: inline-block; 
+    font-size: 15px;
+}
+
+.nav-buttons a:hover {
+    background-color: #90AA86;
+    color: #fff;
+}
+
+
+.image-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; 
+  width: 60px; 
+  height: 60px;
+  padding: 0;
+  cursor: pointer;
+  background-color: #90AA86;
+  border: 1px solid #90AA86;
+  border-radius: 50%;
+}
+
+.image-button img{
+    filter: brightness(0) saturate(100%) invert(15%) sepia(40%) saturate(1500%) hue-rotate(260deg);
+}
+
+.icon-linkedin { width: 20px; height: 20px; }
+.icon-github   { width: 40px; height: 40px; }
+.icon-email { width: 90px; height: 70px; }
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;   /* keeps both circles level */
+  gap: 12px;
+}
+
+
+/* Body */
+body {
+    background-color: #DCCCA3;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Text */
 left {
     text-align: left
 }
@@ -55,55 +138,6 @@ pre {
     line-height: 18.5714px;
 }
 
-body {
-    background-color: #DCCCA3;
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #E4D8BA;
-    color: white;
-    position: sticky;
-    padding: 15px 30px;
-    top: 0;
-    z-index: 1000;
-}
-
-
-
-/* Button container */
-.nav-buttons {
-    display: flex;
-    gap: 12px;
-}
-
-/* Buttons */
-.nav-buttons a {
-    background-color:#E4D8BA; 
-    color: #4A2545;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    text-decoration: none;   /* removes the underline */
-    display: inline-block; 
-    font-size: 15px;
-}
-
-.nav-buttons a:hover {
-    background-color: #90AA86;
-    color: #fff;
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
 
 .spacer {
   height: 50px;
@@ -118,29 +152,4 @@ div.mycontainer > div {
   width: 50%;
   box-sizing: border-box;
   padding: 0 1rem;
-}
-
-.image-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px; 
-  width: 60px; 
-  height: 60px;
-  padding: 0;
-  cursor: pointer;
-  background-color: grey;
-  border: 1px solid grey;
-  border-radius: 50%;
-}
-
-.icon-linkedin { width: 20px; height: 20px; }
-.icon-github   { width: 40px; height: 40px; }
-.icon-email { width: 90px; height: 70px; }
-
-.button-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;   /* keeps both circles level */
-  gap: 12px;
 }
