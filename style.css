@@ -2,7 +2,7 @@
 .logo {
     margin: 0;
     font-size: 24px;
-    color: #4A2545; 
+    color: #4A2545;
     font-family: Arial, sans-serif;
 }
 
@@ -27,14 +27,15 @@
 
 
 .nav-buttons a {
-    background-color:#DCCCA3; 
+    background-color: #DCCCA3;
     color: #4A2545;
     border: none;
     padding: 10px 16px;
     border-radius: 6px;
     cursor: pointer;
-    text-decoration: none;   /* removes the underline */
-    display: inline-block; 
+    text-decoration: none;
+    /* removes the underline */
+    display: inline-block;
     font-size: 15px;
 }
 
@@ -45,32 +46,44 @@
 
 
 .image-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px; 
-  width: 60px; 
-  height: 60px;
-  padding: 0;
-  cursor: pointer;
-  background-color: #90AA86;
-  border: 1px solid #90AA86;
-  border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    cursor: pointer;
+    background-color: #90AA86;
+    border: 1px solid #90AA86;
+    border-radius: 50%;
 }
 
-.image-button img{
+.image-button img {
     filter: brightness(0) saturate(100%) invert(15%) sepia(40%) saturate(1500%) hue-rotate(260deg);
 }
 
-.icon-linkedin { width: 20px; height: 20px; }
-.icon-github   { width: 40px; height: 40px; }
-.icon-email { width: 90px; height: 70px; }
+.icon-linkedin {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-github {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-email {
+    width: 90px;
+    height: 70px;
+}
 
 .button-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;   /* keeps both circles level */
-  gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* keeps both circles level */
+    gap: 12px;
 }
 
 
@@ -140,16 +153,20 @@ pre {
 
 
 .spacer {
-  height: 50px;
+    height: 50px;
 }
 
 div.mycontainer {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
-div.mycontainer > div {
-  width: 50%;
-  box-sizing: border-box;
-  padding: 0 1rem;
+div.mycontainer>div {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+div.newcontainer {
+    background-color: white;
 }
