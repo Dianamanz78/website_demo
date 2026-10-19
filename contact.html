@@ -1,5 +1,73 @@
 <!DOCTYPE html>
 <html>
+<style>
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 24px;
+        background-color: #E8DDBB;
+        border-radius: 12px;
+        color: #4A2545;
+    }
+
+    .contact-form label {
+        font-weight: 500;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px 12px;
+        border: 2px solid #4A2545;
+        border-radius: 8px;
+        background-color: #FFFFFF66;
+        color: #4A2545;
+        font-family: inherit;
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        outline: none;
+        border-color: #90AA86;
+        box-shadow: 0 0 0 3px #90AA8666;
+    }
+
+    .send-button {
+        align-self: flex-start;
+        padding: 10px 24px;
+        background-color: #90AA86;
+        color: #4A2545;
+        border: 2px solid #4A2545;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .send-button:hover {
+        background-color: #4A2545;
+        color: #DCCCA3;
+    }
+
+    div.mycontainer {
+        width: 100%;
+        overflow: auto;
+    }
+
+    div.mycontainer div {
+        width: 50%;
+        float: left;
+    }
+
+    div.center_box {
+        display: flex;
+        justify-content: center;
+    }
+</style>
 
 <head>
     <title>My Website</title>
@@ -16,15 +84,40 @@
 
         <nav class="nav-buttons">
             <a href="index.html">Home</a>
-            <a href = "about.html"> About </a>
-            <a href = "project.html">Projects</a>
+            <a href="about.html"> About </a>
+            <a href="project.html">Projects</a>
             <a href="resume.html">Resume</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
+    <div class="spacer"></div>
+    <h1 style="border-bottom: 3px solid #90AA86; padding-bottom: 10px; margin-left: 30%; margin-right: 30%;">Contact
+    </h1>
+    <div class="spacer"></div>
 
-    <h1>Hello World!</h1>
+    <div class="mycontainer">
+        <div>
+            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit" class="send-button">Send message</button>
+            </form>
+        </div>
+        <div>
+            <h1 style = "text-align: left;">
+                Email: hanani.amir@email.com <br>
+                Phone: (123) 456-7890
+            </h1>
+        </div>
+    </div>
 
     <div class="spacer"></div>
 
@@ -46,6 +139,10 @@
                 </buttontype>
         </div>
         <div class="spacer"></div>
+
+
+
+
         <div class="spacer"></div>
     </div>
 
